@@ -1,0 +1,23 @@
+body {
+    background-color: aqua;
+    display: flex;
+    justify-content: space-around;
+}
+
+#container {
+    width: 40vw;
+    height: 40vw;
+    display: grid;
+    grid-template-columns: repeat(var(--numOfTilesInRow), 1fr);
+    grid-template-rows: repeat(var(--numOfTilesInRow), 1fr);
+    border: black 1px solid;
+}
+
+.tile {
+    /* border: black 1px solid; */
+}
+
+.paint {
+    background-color: blanchedalmond;
+}
+
