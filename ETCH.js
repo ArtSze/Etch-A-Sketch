@@ -23,6 +23,10 @@ function resetMaster(){
 }
 
 function resetSub(e){
+    let tileGroup = document.getElementsByClassName('tile');
+    for (i = 0; i < tileGroup.length; i++) {
+        tileGroup[i].classList.remove('paint');
+    }
     createMultTiles(prompt('how many tiles would you like in a row?'));
 }
 
@@ -30,5 +34,5 @@ createMultTiles(16);
 resetMaster();
 
 
-/* FIND WAY TO CLEAR TILES perhaps by removing paint class*/
+/* make it look nice*/
 
